@@ -1,0 +1,14 @@
+.button{
+    background-color: rgb(12, 102, 124);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btt{
+    position: fixed;
+}
