@@ -3,7 +3,7 @@ import Box from "../Box/box";
 import NavButton from "../Nav-Button/Nav-Button";
 import "./box-list.css";
 
-const BoxList = () => {
+const BoxList = ({showOrder}) => {
   const [colors, setColors] = useState(["red", "blue", "green"]);
 
   function ColorSwap(color) {
@@ -26,7 +26,7 @@ const BoxList = () => {
   return (
     <>
       <div className="Box-List">
-        <NavButton color={colors} />
+        <NavButton colors={colors} showOrder={showOrder} />
         {colors.map((color) => (
           <Box key={color} color={color} />
         ))}
